@@ -1,0 +1,31 @@
+Now we are going to do Blogging website
+
+1.Create a index.js and install required dependencies
+2.For home.ejs we have included the scripts and head ejs file from partials folder 
+  bcoz we have use those everyWhere
+3.Create a Schema and model for users in models folder 
+4.create signin and signup pages and get their routes ready in user.js in routes folder
+5.In signup page try to  sign in when we see the database
+it will appear as hash password.
+6.To write the signin post function in routes fo we have to create a vitual
+function  in mongoose where our password should match with the hash password.
+7.To do this we have gone to models of user and changed the user given password in to
+hashed password and check if they matches.
+
+***************************************
+AUTHENTICATION::
+1.install json web token
+2.use the folder services and authentication file
+3.create token and verify with secret key and export.
+4.in sign in route we have asked models to check the password
+and created a token...the token was createed in /services/authentication.
+
+***************************************
+--> In Navbar there is dropdown if the user is logged in then it should shoe logout
+otherwise login
+1/ create a folder middleware which has authentication which checks the token in the 
+in the form of cookie(validate) 
+2.after it follows the -->
+*******************************************
+1.TO add Blogs we need Schema called blog Schema
+2.create a html page for blog in views (addBlog)
